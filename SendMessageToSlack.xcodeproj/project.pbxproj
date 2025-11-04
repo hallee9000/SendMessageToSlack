@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		2BD87E5E2EB997FD00F6619F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BD87E442EB997FB00F6619F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BD87E4B2EB997FB00F6619F;
+			remoteInfo = SendMessageToSlack;
+		};
+		2BD87E682EB997FD00F6619F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BD87E442EB997FB00F6619F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BD87E4B2EB997FB00F6619F;
+			remoteInfo = SendMessageToSlack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2BD87E4C2EB997FB00F6619F /* SendMessageToSlack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendMessageToSlack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BD87E5D2EB997FD00F6619F /* SendMessageToSlackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SendMessageToSlackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BD87E672EB997FD00F6619F /* SendMessageToSlackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SendMessageToSlackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		2BD87E4E2EB997FB00F6619F /* SendMessageToSlack */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SendMessageToSlack;
+			sourceTree = "<group>";
+		};
+		2BD87E602EB997FD00F6619F /* SendMessageToSlackTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SendMessageToSlackTests;
+			sourceTree = "<group>";
+		};
+		2BD87E6A2EB997FD00F6619F /* SendMessageToSlackUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SendMessageToSlackUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BD87E492EB997FB00F6619F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BD87E5A2EB997FD00F6619F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BD87E642EB997FD00F6619F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BD87E432EB997FB00F6619F = {
+			isa = PBXGroup;
+			children = (
+				2BD87E4E2EB997FB00F6619F /* SendMessageToSlack */,
+				2BD87E602EB997FD00F6619F /* SendMessageToSlackTests */,
+				2BD87E6A2EB997FD00F6619F /* SendMessageToSlackUITests */,
+				2BD87E4D2EB997FB00F6619F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BD87E4D2EB997FB00F6619F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BD87E4C2EB997FB00F6619F /* SendMessageToSlack.app */,
+				2BD87E5D2EB997FD00F6619F /* SendMessageToSlackTests.xctest */,
+				2BD87E672EB997FD00F6619F /* SendMessageToSlackUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BD87E4B2EB997FB00F6619F /* SendMessageToSlack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BD87E712EB997FD00F6619F /* Build configuration list for PBXNativeTarget "SendMessageToSlack" */;
+			buildPhases = (
+				2BD87E482EB997FB00F6619F /* Sources */,
+				2BD87E492EB997FB00F6619F /* Frameworks */,
+				2BD87E4A2EB997FB00F6619F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				2BD87E4E2EB997FB00F6619F /* SendMessageToSlack */,
+			);
+			name = SendMessageToSlack;
+			packageProductDependencies = (
+			);
+			productName = SendMessageToSlack;
+			productReference = 2BD87E4C2EB997FB00F6619F /* SendMessageToSlack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BD87E5C2EB997FD00F6619F /* SendMessageToSlackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BD87E742EB997FD00F6619F /* Build configuration list for PBXNativeTarget "SendMessageToSlackTests" */;
+			buildPhases = (
+				2BD87E592EB997FD00F6619F /* Sources */,
+				2BD87E5A2EB997FD00F6619F /* Frameworks */,
+				2BD87E5B2EB997FD00F6619F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BD87E5F2EB997FD00F6619F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2BD87E602EB997FD00F6619F /* SendMessageToSlackTests */,
+			);
+			name = SendMessageToSlackTests;
+			packageProductDependencies = (
+			);
+			productName = SendMessageToSlackTests;
+			productReference = 2BD87E5D2EB997FD00F6619F /* SendMessageToSlackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2BD87E662EB997FD00F6619F /* SendMessageToSlackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BD87E772EB997FD00F6619F /* Build configuration list for PBXNativeTarget "SendMessageToSlackUITests" */;
+			buildPhases = (
+				2BD87E632EB997FD00F6619F /* Sources */,
+				2BD87E642EB997FD00F6619F /* Frameworks */,
+				2BD87E652EB997FD00F6619F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BD87E692EB997FD00F6619F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2BD87E6A2EB997FD00F6619F /* SendMessageToSlackUITests */,
+			);
+			name = SendMessageToSlackUITests;
+			packageProductDependencies = (
+			);
+			productName = SendMessageToSlackUITests;
+			productReference = 2BD87E672EB997FD00F6619F /* SendMessageToSlackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BD87E442EB997FB00F6619F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					2BD87E4B2EB997FB00F6619F = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					2BD87E5C2EB997FD00F6619F = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 2BD87E4B2EB997FB00F6619F;
+					};
+					2BD87E662EB997FD00F6619F = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 2BD87E4B2EB997FB00F6619F;
+					};
+				};
+			};
+			buildConfigurationList = 2BD87E472EB997FB00F6619F /* Build configuration list for PBXProject "SendMessageToSlack" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BD87E432EB997FB00F6619F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2BD87E4D2EB997FB00F6619F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BD87E4B2EB997FB00F6619F /* SendMessageToSlack */,
+				2BD87E5C2EB997FD00F6619F /* SendMessageToSlackTests */,
+				2BD87E662EB997FD00F6619F /* SendMessageToSlackUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BD87E4A2EB997FB00F6619F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BD87E5B2EB997FD00F6619F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BD87E652EB997FD00F6619F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BD87E482EB997FB00F6619F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BD87E592EB997FD00F6619F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BD87E632EB997FD00F6619F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BD87E5F2EB997FD00F6619F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BD87E4B2EB997FB00F6619F /* SendMessageToSlack */;
+			targetProxy = 2BD87E5E2EB997FD00F6619F /* PBXContainerItemProxy */;
+		};
+		2BD87E692EB997FD00F6619F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BD87E4B2EB997FB00F6619F /* SendMessageToSlack */;
+			targetProxy = 2BD87E682EB997FD00F6619F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2BD87E6F2EB997FD00F6619F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2BD87E702EB997FD00F6619F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		2BD87E722EB997FD00F6619F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SendMessageToSlack/SendMessageToSlack.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SendMessageToSlack/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heronhq.SendMessageToSlack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2BD87E732EB997FD00F6619F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SendMessageToSlack/SendMessageToSlack.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SendMessageToSlack/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heronhq.SendMessageToSlack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2BD87E752EB997FD00F6619F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heronhq.SendMessageToSlackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SendMessageToSlack.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SendMessageToSlack";
+			};
+			name = Debug;
+		};
+		2BD87E762EB997FD00F6619F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heronhq.SendMessageToSlackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SendMessageToSlack.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SendMessageToSlack";
+			};
+			name = Release;
+		};
+		2BD87E782EB997FD00F6619F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heronhq.SendMessageToSlackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SendMessageToSlack;
+			};
+			name = Debug;
+		};
+		2BD87E792EB997FD00F6619F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heronhq.SendMessageToSlackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SendMessageToSlack;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BD87E472EB997FB00F6619F /* Build configuration list for PBXProject "SendMessageToSlack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BD87E6F2EB997FD00F6619F /* Debug */,
+				2BD87E702EB997FD00F6619F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BD87E712EB997FD00F6619F /* Build configuration list for PBXNativeTarget "SendMessageToSlack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BD87E722EB997FD00F6619F /* Debug */,
+				2BD87E732EB997FD00F6619F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BD87E742EB997FD00F6619F /* Build configuration list for PBXNativeTarget "SendMessageToSlackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BD87E752EB997FD00F6619F /* Debug */,
+				2BD87E762EB997FD00F6619F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BD87E772EB997FD00F6619F /* Build configuration list for PBXNativeTarget "SendMessageToSlackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BD87E782EB997FD00F6619F /* Debug */,
+				2BD87E792EB997FD00F6619F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BD87E442EB997FB00F6619F /* Project object */;
+}
