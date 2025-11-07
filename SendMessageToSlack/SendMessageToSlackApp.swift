@@ -4,10 +4,17 @@
 import SwiftUI
 
 @main
-struct SendMessageToSlackApp: App {
+struct SlackMenuBarApp: App {
+    @StateObject private var slackManager = SlackManager()
+    
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        // 菜单栏窗口
+        MenuBarExtra {
+            RootView()
+                .environmentObject(slackManager)
+        } label: {
+            Label("Slack Sender", systemImage: "number.square.fill")
         }
+        .menuBarExtraStyle(.window)
     }
 }

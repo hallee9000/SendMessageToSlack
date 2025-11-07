@@ -29,9 +29,22 @@
 		2BD87E672EB997FD00F6619F /* SendMessageToSlackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SendMessageToSlackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2BD87E902EB99BB800F6619F /* Exceptions for "SendMessageToSlack" folder in "SendMessageToSlack" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 2BD87E4B2EB997FB00F6619F /* SendMessageToSlack */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2BD87E4E2EB997FB00F6619F /* SendMessageToSlack */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2BD87E902EB99BB800F6619F /* Exceptions for "SendMessageToSlack" folder in "SendMessageToSlack" target */,
+			);
 			path = SendMessageToSlack;
 			sourceTree = "<group>";
 		};
@@ -399,6 +412,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SendMessageToSlack/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SendMessageToSlack/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -424,6 +439,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SendMessageToSlack/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SendMessageToSlack/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
