@@ -11,6 +11,15 @@ struct SettingsView: View {
     @State private var isTestingConnection = false
     @State private var testResult = ""
     @Environment(\.dismiss) private var dismiss
+    
+    // 隐藏清除按钮相关状态
+    @State private var titleClickCount = 0
+    @State private var showClearButton = false
+    @State private var clickResetTask: Task<Void, Never>?
+    
+    // 添加 UserDefaults 的 key
+    private let tempTokenKey = "com.sendmessagetoslack.tempToken"
+    private let tempChannelKey = "com.sendmessagetoslack.tempChannel"
 
     var body: some View {
         VStack(spacing: 20) {
@@ -19,8 +28,41 @@ struct SettingsView: View {
                 Text("Settings")
                     .font(.title2)
                     .fontWeight(.semibold)
+                    .onTapGesture {
+                        // 取消之前的重置任务
+                        clickResetTask?.cancel()
+                        
+                        titleClickCount += 1
+                        if titleClickCount >= 3 {
+                            showClearButton = true
+                            titleClickCount = 0
+                        } else {
+                            // 如果还没到3次，设置2秒后重置计数
+                            clickResetTask = Task {
+                                try? await Task.sleep(nanoseconds: 2_000_000_000) // 2秒
+                                if !Task.isCancelled {
+                                    await MainActor.run {
+                                        titleClickCount = 0
+                                    }
+                                }
+                            }
+                        }
+                    }
                 
                 Spacer()
+                
+                // 隐藏的清除按钮
+                if showClearButton {
+                    Button(action: {
+                        clearAllDefaults()
+                    }) {
+                        Text("Remove defaults")
+                            .font(.caption)
+                            .foregroundColor(.red)
+                    }
+                    .buttonStyle(.plain)
+                    .padding(.trailing, 8)
+                }
                 
                 // 只在已配置的情况下显示关闭按钮
                 if slackManager.isConfigured {
@@ -112,14 +154,36 @@ struct SettingsView: View {
         .padding()
         .background(Color(NSColor.windowBackgroundColor))
         .onAppear {
-            tempToken = slackManager.token
-            tempChannel = slackManager.defaultChannel
+            // 先检查是否有未保存的临时值
+            if let savedToken = UserDefaults.standard.string(forKey: tempTokenKey), !savedToken.isEmpty {
+                tempToken = savedToken
+            } else {
+                tempToken = slackManager.token
+            }
+            
+            if let savedChannel = UserDefaults.standard.string(forKey: tempChannelKey), !savedChannel.isEmpty {
+                tempChannel = savedChannel
+            } else {
+                tempChannel = slackManager.defaultChannel
+            }
+        }
+        .onDisappear {
+            // 保存临时输入到 UserDefaults
+            UserDefaults.standard.set(tempToken, forKey: tempTokenKey)
+            UserDefaults.standard.set(tempChannel, forKey: tempChannelKey)
+            
+            // 取消点击重置任务
+            clickResetTask?.cancel()
         }
     }
 
     private func saveSettings() {
         slackManager.token = tempToken
         slackManager.defaultChannel = tempChannel
+        
+        // 保存成功后清除临时值
+        UserDefaults.standard.removeObject(forKey: tempTokenKey)
+        UserDefaults.standard.removeObject(forKey: tempChannelKey)
         
         if slackManager.isConfigured {
             showingSettings = false
@@ -148,6 +212,28 @@ struct SettingsView: View {
                 }
             }
         }
+    }
+    
+    private func clearAllDefaults() {
+        // 取消点击重置任务
+        clickResetTask?.cancel()
+        
+        // 清除所有相关的 UserDefaults
+        UserDefaults.standard.removeObject(forKey: "SlackBotToken")
+        UserDefaults.standard.removeObject(forKey: "SlackDefaultChannel")
+        UserDefaults.standard.removeObject(forKey: tempTokenKey)
+        UserDefaults.standard.removeObject(forKey: tempChannelKey)
+        
+        // 重置 slackManager 的状态
+        slackManager.token = ""
+        slackManager.defaultChannel = ""
+        
+        // 重置当前视图的状态
+        tempToken = ""
+        tempChannel = ""
+        testResult = ""
+        showClearButton = false
+        titleClickCount = 0
     }
 }
 
